@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class sstring {
+
+	public static void main(String[] args) {
+		try (Scanner scan = new Scanner(System.in)) {
+			System.out.println("input");
+			String input = scan.nextLine();
+			input = input.replaceAll("[\\s+,.]", "");
+
+			System.out.println(input.length());
+		}
+
+	}
+
+}
